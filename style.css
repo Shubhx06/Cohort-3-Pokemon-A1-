@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+.leftSection{
+    background-color: #fbc50b;
+    width: 65%;
+    border-radius: 16px 0px 0px 16px;
+
+}
+
+.pokemonLogo{
+        padding: 16px 0px 19px 37px;
+    
+}
+.pokemonLogo img{
+width: 230px;
+}
+.PokemonDateTime h6{
+    font-size: 25px;
+  
+}
+.PokemonDateTime{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.RightSection{
+  background-color: #fbe8b5;
+  width: 35%;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.PikachuImg{
+    position: absolute;
+    left: 67%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.fa-bars{
+    color: black;
+}
+
+
+
+
+.PokemonContaier {
+    word-spacing: 4px;
+    font-size: 18px;
+    width: 59%;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 21px 0px 0px 96px;
+}
+.heading span{
+    padding-left: 6px;
+    word-spacing: 8px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+.MainHeading{
+  font-size: 60px;
+}
+
+
+.line{
+    height: 2px;
+    width: 45px;
+    background-color: black;
+}
+
+
+
+.BallImg {
+    left: 44px;
+    position: absolute;
+    bottom: 13px;
+    overflow: hidden;}
+
+.BallImg img{
+    width: 200px;
+    display: block;
+
+    /* Move image downward so lower part gets hidden */
+    transform: translateY(40%);
+}
+
+
+
+
+
+.PikachuImg img{
+    width: 617px;
+    animation: aliveMove 4s ease-in-out infinite;
+}
+
+
+
+
+
+
+.RightThings{
+    height: 100%;
+    position: relative;
+}
+
+/* Hamburger right top */
+
+.Hamburger{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Dots in middle right */
+
+ul{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Remove default style */
+
+ul li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+li:nth-child(1){
+background-color: #fbc50b;
+}
+/* Smooth alive movement */
+
+@keyframes aliveMove{
+
+    0%{
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    25%{
+        transform: translateY(-8px) rotate(-1deg);
+    }
+
+    50%{
+        transform: translateY(-15px) rotate(1deg);
+    }
+
+    75%{
+        transform: translateY(-8px) rotate(-1deg);
+    }
+
+    100%{
+        transform: translateY(0px) rotate(0deg);
+    }
+}
