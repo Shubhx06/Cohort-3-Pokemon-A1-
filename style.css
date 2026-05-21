@@ -13,7 +13,6 @@
 .leftSection{
     background-color: #fbc50b;
     width: 65%;
-    border-radius: 16px 0px 0px 16px;
 
 }
 
@@ -37,7 +36,7 @@ width: 230px;
 .RightSection{
   background-color: #fbe8b5;
   width: 35%;
-  border-radius: 0px 16px 16px 0px;
+
 }
 
 .PikachuImg{
